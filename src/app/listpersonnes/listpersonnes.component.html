@@ -1,0 +1,13 @@
+<h1>Liste des personnes</h1>
+<ul>
+    <li *ngFor="let p of personnes">
+        <!-- {{p.nom}} - {{p.age}}- {{p.isEtudiant}} -->
+<dsi-personne [nom]="p.nom" [age]="p.age" [estEtudiant]="p.isEtudiant"></dsi-personne>
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let p of personnes">
+            <dsi-unepersonne [personne]="p"></dsi-unepersonne>
+    </li>
+</ul>
